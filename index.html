@@ -55,11 +55,13 @@
             }
 
             body{
-                font-family:"Cardo";
-                background-image:url(./cover0.png);
-                background-size: cover;
-                padding-bottom:5rem;
-                font-size:18px;
+                font-family: "Cardo";
+                background-image: url(./cover1.png),url(./cover2.png), url(./cover0.png);
+                background-size: auto, auto, cover;
+                background-position: -100px -100px, calc(100% + 100px) -100px, center;
+                background-repeat: no-repeat;
+                padding-bottom: 5rem;
+                font-size: 18px;
             
             }
 
@@ -70,7 +72,7 @@
                 font-weight:bold;
                 color:#44170D;
             }
-
+            body b{color:#44170D}
             body > p{max-width:90%;width:500px;margin:0 auto 30px auto}
             @media(max-width:990px){
                 #map{padding:15px;}
@@ -85,12 +87,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body style="text-align:center">
-        <img src="./savethedate.png" style="
+        <br><br>
+        <img src="./savethedate3.png" style="
             width:400px;
             max-width:100%;
         "/>
-        <p>Informe seus dados no formulário abaixo para confirmar sua presença. Caso o não preenchimento até a data XX/XX/XXXX entenderemos que você não irá comparecer e não será autorizada a entrada no dia do evento.</p>
-        <p><b>Importante:</b> <u>Só será permitido a entrada de convidados</u>. Infelizmente não conseguimos chamar todas as pessoas que queriamos, então só preencha se você realmente recebeu nosso convite.</p>
+        <br><br>
+        <p>Não vemos a hora de compartilhar esse momento e gostaríamos muito que você estive lá! Para uma melhor organização, precisamos que confirme sua presença preenchendo os dados abaixo. Caso vc confirme e por ventura ocorra um imprevisto e não consiga ir, pedimos gentilmente que nos avise.</p>
+        <p><b>Importante:</b> para os convidados que não confirmarem a presença nesse link até <u>15/03/2023</u>, entenderemos que infelizmente não estarão presentes nessa data.</p>
         <form>
             <div>
                 <label>Nome</label>
@@ -102,7 +106,7 @@
             </div>
             <div>
                 <label>RG*</label>
-                <small>*Obrigatório para adicionar na lista de convidados do salão de festas.</small>
+                <small>*Obrigatório para acessar o salão de festas.</small>
                 <input type="tel" name="name" placeholder="Somente números">
                 
             </div>
@@ -111,15 +115,16 @@
         <br><br>
         <h2>Orientações</h2>
         <p>Ao tocar o interfone do prédio, informe que irá ao salão de festas, seu nome completo e documento.</p>
-        <br>
-        <h2>Traga apenas:</h2>
-        <p>Boas energias, sorriso no rosto, barriga vazia, engov e epocler.</p>
-        <br>
-        <h2>Endereço</h2>
-        <p>Rua Visconde de Parnaíba, 1046 - Brás - São Paulo/SP - CEP: 03044-000</p>
+        <p><b>Encerramento:</b> <u>Buffet</u>: 17h30 / <u>Farra:</u> 22h</p>
+        <p><b>Traga apenas:</b> Boas energias, sorriso no rosto, barriga vazia, engov e epocler.</p>
+        <p><b>Endereço:</b> Rua Visconde de Parnaíba, 1046 - Brás - São Paulo/SP - CEP: 03044-000</p>
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4947287387995!2d-46.61754058441127!3d-23.550668867084028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5919cdf36605%3A0xa417a3e66752731a!2sCondom%C3%ADnio%20Pra%C3%A7as%20da%20Cidade%20-%20R.%20Visc.%20de%20Parna%C3%ADba%2C%201046%20-%20Br%C3%A1s%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003044-000!5e0!3m2!1spt-BR!2sbr!4v1676497578981!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <a href="https://m.uber.com/ul/?action=setPickup&client_id=qUteSpLCuXKToLRegjuHDPJnxVSYAagJSne8dRKg&pickup=my_location&dropoff[formatted_address]=Condom%C3%ADnio%20Pra%C3%A7as%20da%20Cidade%20-%20Rua%20Visconde%20de%20Parna%C3%ADba%2C%201046%20-%20Br%C3%A1s%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brazil&dropoff[latitude]=-23.550674&dropoff[longitude]=-46.615352">
+            Vá de UBER
+        </a>
         
         <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script>
