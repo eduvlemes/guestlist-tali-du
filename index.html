@@ -3,6 +3,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
         <style>
             *{box-sizing:border-box}
             form{
@@ -61,7 +62,7 @@
                 background-position: -100px -100px, calc(100% + 100px) -100px, center;
                 background-repeat: no-repeat;
                 padding-bottom: 5rem;
-                font-size: 18px;
+                font-size: 20px;
             
             }
 
@@ -74,12 +75,41 @@
             }
             body b{color:#44170D}
             body > p{max-width:90%;width:500px;margin:0 auto 30px auto}
+
+            .uber{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color:#fff;
+                background:#000;
+                border-radius: 5px;
+                text-decoration: none;
+                font-family: Roboto;
+                font-weight: 300;
+                width: 220px;
+                font-size: 16px;
+                text-align: center;
+                justify-content: center;
+                line-height: 40px;
+                margin:30px auto 0 auto
+            }
+            .uber svg{height:16px;width:auto;}
             @media(max-width:990px){
                 #map{padding:15px;}
                 #map iframe{max-width:100%!important}
                 img{width: 300px!important;margin:-15px;}
                 form{width:90%;margin:0 auto;padding:20px;}
                 form button{font-size:16px;margin-top:20px;}
+
+                body{
+                    background-image: url(./cover1.png),url(./cover2.png), url(./cover0.png);
+                    background-size: 200px, 200px, cover;
+                    background-position: -100px -50px, calc(100% + 70px) -50px, center;
+                    background-repeat: no-repeat;
+                    padding-bottom: 5rem;
+                    font-size: 18px;
+                
+                }
             }
 
 
@@ -93,7 +123,7 @@
             max-width:100%;
         "/>
         <br><br>
-        <p>Não vemos a hora de compartilhar esse momento e gostaríamos muito que você estive lá! Para uma melhor organização, precisamos que confirme sua presença preenchendo os dados abaixo. Caso vc confirme e por ventura ocorra um imprevisto e não consiga ir, pedimos gentilmente que nos avise.</p>
+        <p>Não vemos a hora de compartilhar esse momento e gostaríamos muito que você estive lá! Para uma melhor organização, precisamos que confirme sua presença preenchendo os dados abaixo. <br>Caso você confirme e por ventura ocorra um imprevisto e não consiga ir, pedimos gentilmente que nos avise.</p>
         <p><b>Importante:</b> para os convidados que não confirmarem a presença nesse link até <u>15/03/2023</u>, entenderemos que infelizmente não estarão presentes nessa data.</p>
         <form>
             <div>
@@ -115,15 +145,15 @@
         <br><br>
         <h2>Orientações</h2>
         <p>Ao tocar o interfone do prédio, informe que irá ao salão de festas, seu nome completo e documento.</p>
-        <p><b>Encerramento:</b> <u>Buffet</u>: 17h30 / <u>Farra:</u> 22h</p>
         <p><b>Traga apenas:</b> Boas energias, sorriso no rosto, barriga vazia, engov e epocler.</p>
         <p><b>Endereço:</b> Rua Visconde de Parnaíba, 1046 - Brás - São Paulo/SP - CEP: 03044-000</p>
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4947287387995!2d-46.61754058441127!3d-23.550668867084028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5919cdf36605%3A0xa417a3e66752731a!2sCondom%C3%ADnio%20Pra%C3%A7as%20da%20Cidade%20-%20R.%20Visc.%20de%20Parna%C3%ADba%2C%201046%20-%20Br%C3%A1s%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003044-000!5e0!3m2!1spt-BR!2sbr!4v1676497578981!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <a href="https://m.uber.com/ul/?action=setPickup&client_id=qUteSpLCuXKToLRegjuHDPJnxVSYAagJSne8dRKg&pickup=my_location&dropoff[formatted_address]=Condom%C3%ADnio%20Pra%C3%A7as%20da%20Cidade%20-%20Rua%20Visconde%20de%20Parna%C3%ADba%2C%201046%20-%20Br%C3%A1s%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brazil&dropoff[latitude]=-23.550674&dropoff[longitude]=-46.615352">
-            Vá de UBER
+        <a class="uber" href="https://m.uber.com/ul/?action=setPickup&client_id=qUteSpLCuXKToLRegjuHDPJnxVSYAagJSne8dRKg&pickup=my_location&dropoff[formatted_address]=Condom%C3%ADnio%20Pra%C3%A7as%20da%20Cidade%20-%20Rua%20Visconde%20de%20Parna%C3%ADba%2C%201046%20-%20Br%C3%A1s%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%20Brazil&dropoff[latitude]=-23.550674&dropoff[longitude]=-46.615352">
+            <u>Clique aqui</u>e vá de  
+            <svg height="868" width="2500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 926.905 321.77700000000004"><g fill="#fff"><path d="M53.328 229.809c3.917 10.395 9.34 19.283 16.27 26.664 6.93 7.382 15.14 13.031 24.63 16.948 9.491 3.917 19.81 5.875 30.958 5.875 10.847 0 21.015-2.034 30.506-6.102s17.776-9.792 24.856-17.173c7.08-7.382 12.579-16.194 16.496-26.438s5.875-21.692 5.875-34.347V0h47.453v316.354h-47.001v-29.376c-10.545 11.147-22.974 19.734-37.285 25.761-14.312 6.025-29.752 9.038-46.323 9.038-16.873 0-32.615-2.938-47.228-8.813-14.612-5.875-27.267-14.235-37.962-25.082S15.441 264.006 9.265 248.79C3.088 233.575 0 216.628 0 197.947V0h47.453v195.236c0 12.655 1.958 24.178 5.875 34.573zM332.168 0v115.243c10.545-10.545 22.748-18.905 36.607-25.082s28.924-9.265 45.193-9.265c16.873 0 32.689 3.163 47.453 9.49 14.763 6.327 27.567 14.914 38.414 25.761s19.434 23.651 25.761 38.414c6.327 14.764 9.49 30.431 9.49 47.002 0 16.57-3.163 32.162-9.49 46.774-6.327 14.613-14.914 27.343-25.761 38.188-10.847 10.847-23.651 19.434-38.414 25.761-14.764 6.327-30.581 9.49-47.453 9.49-16.27 0-31.409-3.088-45.419-9.265-14.01-6.176-26.288-14.537-36.833-25.082v28.924h-45.193V0zm5.197 232.746c4.067 9.642 9.717 18.078 16.948 25.309s15.667 12.956 25.308 17.174c9.642 4.218 20.036 6.327 31.184 6.327 10.847 0 21.09-2.109 30.731-6.327s18.001-9.942 25.083-17.174c7.08-7.23 12.729-15.667 16.947-25.309 4.218-9.641 6.327-20.035 6.327-31.183s-2.109-21.618-6.327-31.41-9.867-18.303-16.947-25.534c-7.081-7.23-15.441-12.88-25.083-16.947s-19.885-6.102-30.731-6.102-21.09 2.034-30.731 6.102-18.077 9.717-25.309 16.947c-7.23 7.231-12.955 15.742-17.173 25.534s-6.327 20.262-6.327 31.41c-.001 11.148 2.033 21.542 6.1 31.183zM560.842 155.014c6.025-14.462 14.312-27.191 24.856-38.188s23.049-19.659 37.511-25.986 30.129-9.49 47.001-9.49c16.571 0 31.937 3.013 46.098 9.038 14.16 6.026 26.362 14.387 36.606 25.083 10.244 10.695 18.229 23.35 23.952 37.962 5.725 14.613 8.587 30.506 8.587 47.68v14.914H597.901c1.507 9.34 4.52 18.002 9.039 25.985 4.52 7.984 10.168 14.914 16.947 20.789 6.779 5.876 14.462 10.471 23.049 13.784 8.587 3.314 17.7 4.972 27.342 4.972 27.418 0 49.563-11.299 66.435-33.896l32.991 24.404c-11.449 15.366-25.609 27.418-42.481 36.155-16.873 8.737-35.854 13.106-56.944 13.106-17.174 0-33.217-3.014-48.131-9.039s-27.869-14.462-38.866-25.309-19.659-23.576-25.986-38.188-9.491-30.506-9.491-47.679c-.002-16.269 3.012-31.635 9.037-46.097zm63.497-17.852c-12.805 10.696-21.316 24.932-25.534 42.708h140.552c-3.917-17.776-12.278-32.012-25.083-42.708-12.805-10.695-27.794-16.043-44.967-16.043-17.174 0-32.163 5.348-44.968 16.043zM870.866 142.359c-9.641 10.545-14.462 24.856-14.462 42.934v131.062h-45.646V85.868h45.193v28.472c5.725-9.34 13.182-16.722 22.371-22.145 9.189-5.424 20.111-8.136 32.766-8.136h15.817v42.482h-18.981c-15.064.001-27.417 5.273-37.058 15.818z"/></g></svg>
         </a>
         
         <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
