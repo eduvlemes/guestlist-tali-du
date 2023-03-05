@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+        <style>
+            *{box-sizing:border-box}
+            form{
+                max-width:100%;
+                width:400px;
+                margin: 0 auto;
+                background:#fff;
+                box-shadow:0px 5px 25px rgba(0,0,0,.3);
+                border-radius:10px;
+                padding: 30px;
+            }
+            form > div{
+                display:flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+                gap:5px;
+                margin-bottom: 15px;
+            }
+            form label{
+                font-weight:bold;
+                color:#44170D;
+                font-size:18px;
+                
+            }
+            form input{
+                border:1px solid #f2f2f2;
+                color:#848484;
+                background:#f8f8f8;
+                border-radius:3px;
+                padding:15px
+            }
+            form button{
+                background:#AE1F3D;
+                font-family:"Cardo";
+                color:#fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size:22px;
+                border: 0;
+                display:block;
+                width:100%;
+                padding:15px 10px;
+                border-radius: 5px;
+                box-shadow:5px 5px 10px rgba(0,0,0,.3);
+                margin-top:30px;
+            }
+            form small{
+                color:#848484
+            }
+
+            body{
+                font-family: "Cardo";
+                background-image: url(./cover1.png),url(./cover2.png), url(./cover0.png);
+                background-size: auto, auto, cover;
+                background-position: -100px -100px, calc(100% + 100px) -100px, center;
+                background-repeat: no-repeat;
+                padding-bottom: 5rem;
+                font-size: 20px;
+            
+            }
+
+            #map iframe{border-radius:10px;}
+
+
+            h2{
+                font-weight:bold;
+                color:#44170D;
+            }
+            body b{color:#44170D}
+            body > p{max-width:90%;width:500px;margin:0 auto 30px auto}
+
+            .uber{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color:#fff;
+                background:#000;
+                border-radius: 5px;
+                text-decoration: none;
+                font-family: Roboto;
+                font-weight: 300;
+                width: 220px;
+                font-size: 16px;
+                text-align: center;
+                justify-content: center;
+                line-height: 40px;
+                margin:30px auto 0 auto
+            }
+            .uber svg{height:16px;width:auto;}
+            @media(max-width:990px){
+                #map{padding:15px;}
+                #map iframe{max-width:100%!important}
+                img{width: 300px!important;margin:-15px;}
+                form{width:90%;margin:0 auto;padding:20px;}
+                form button{font-size:16px;margin-top:20px;}
+
+                body{
+                    background-image: url(./cover1.png),url(./cover2.png), url(./cover0.png);
+                    background-size: 200px, 200px, cover;
+                    background-position: -100px -50px, calc(100% + 70px) -50px, center;
+                    background-repeat: no-repeat;
+                    padding-bottom: 5rem;
+                    font-size: 18px;
+                
+                }
+            }
+
+
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align:center">
+        <br><br>
+        <img src="./savethedate3.png" style="
+            width:400px;
+            max-width:100%;
+        "/>
+        <br><br>
+        <h2>Presença Confirmada!</h2>
+        <p>A partir de agora contamos com sua presença neste dia tão especial.</p>
+        <hr style="margin:2rem auto; width:500px;border-color:#f2f2f2;"></hr>
+        <p><b>Importante:</b> Caso tenha algum acompanhante que também tenha sido convidado, preencha o formulário abaixo com os dados dele.</p>
+        <form action="https://api.sheetmonkey.io/form/wbUaSo8Zt7QCMMRwfEnjA8" method="POST">
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <div>
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Informe seu nome completo...">
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="tel" name="phone" placeholder="Telefone ou WhatsApp">
+            </div>
+            <div>
+                <label>RG*</label>
+                <small>*Obrigatório para acessar o salão de festas.</small>
+                <input type="tel" name="doc" placeholder="Somente números">
+                
+            </div>
+            <button  type="submit">Confirmar Presença</button>
+        </form>
+        <br><br>
+        
+        
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            
+        </script>
+    </body>
+
+</html>
